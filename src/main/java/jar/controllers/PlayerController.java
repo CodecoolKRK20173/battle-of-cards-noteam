@@ -11,21 +11,21 @@ public class PlayerController {
     private List<Player> playerList = new ArrayList<>();
     private DeckController deckController;
 
-    PlayerController(DeckController deckController) {
+    public PlayerController(DeckController deckController) {
         this.deckController = deckController;
-        this.cardsAmount = View.getAmountOfCards();
-        this.npcNumber = View.getNPCNumber();
+        // this.cardsAmount = View.getAmountOfCards();
+        // this.npcNumber = View.getNPCNumber();
 
         createPlayerList();
     }
 
     private void createPlayerList() {
         for(int i = 0; i < npcNumber; ++i) {
-            playerList.add(new NPC(deckController.loadDeck(amountOfCards)));
+            playerList.add(new NPC(deckController.loadDeck(cardsAmount)));
         }
 
         for(int i = 0; i < 4 - npcNumber; ++i) {
-            playerList.add(new HumanPlayer(deckController.loadDeck(amountOfCards)));
+            playerList.add(new HumanPlayer(deckController.loadDeck(cardsAmount)));
         }
     }
 

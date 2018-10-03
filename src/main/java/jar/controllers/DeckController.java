@@ -4,6 +4,8 @@ import main.java.jar.model.Deck;
 import main.java.jar.model.Card;
 import main.java.jar.dao.CardDAO;
 
+import java.util.List;
+
 public class DeckController {
 
     public Deck loadDeck(int amountOfCards){
