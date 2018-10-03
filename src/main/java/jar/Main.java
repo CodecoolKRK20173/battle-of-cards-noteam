@@ -1,7 +1,8 @@
 package main.java.jar;
 
+import main.java.jar.controllers.MainController;
 public class Main {
     public static void main(String[] args) {
-        MainController = new MainController();
+        MainController mainController = new MainController();
     }
 }

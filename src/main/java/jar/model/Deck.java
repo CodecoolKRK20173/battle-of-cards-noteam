@@ -1,4 +1,4 @@
-package model;
+package main.java.jar.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
