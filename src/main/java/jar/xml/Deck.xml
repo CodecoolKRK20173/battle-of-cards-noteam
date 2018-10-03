@@ -66,7 +66,7 @@
             <Stat id="strength">18</Stat>
             <Stat id="toughness">20</Stat>
             <Stat id="magic">11</Stat>
-            <Stat id="speed">6</Stat>
+            <Stat id="speed">14</Stat>
         </Stats>
     </Card>
 
@@ -165,23 +165,23 @@
         <Stats>
             <Stat id="strength">12</Stat>
             <Stat id="toughness">8</Stat>
-            <Stat id="magic">12</Stat>
+            <Stat id="magic">14</Stat>
             <Stat id="speed">6</Stat>
         </Stats>
     </Card>
 
-        <Card id="centaur">
-        <Description name="Centaur"/>
+    <Card id="centaurlord">
+        <Description name="Centaur Lord"/>
         <Stats>
-            <Stat id="strength">12</Stat>
-            <Stat id="toughness">8</Stat>
-            <Stat id="magic">12</Stat>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">10</Stat>
+            <Stat id="magic">14</Stat>
             <Stat id="speed">8</Stat>
         </Stats>
     </Card>
 
     <Card id="goblinshaman">
-        <Description name="Goblin"/>
+        <Description name="Goblin Shaman"/>
         <Stats>
             <Stat id="strength">11</Stat>
             <Stat id="toughness">11</Stat>
@@ -210,4 +210,603 @@
         </Stats>
     </Card>
 
+    <Card id="hydra">
+        <Description name="Hydra"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">5</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="hobgoblin">
+        <Description name="Hobgoblin"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="kirin">
+        <Description name="Kirin"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">12</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="lich">
+        <Description name="Lich"/>
+        <Stats>
+            <Stat id="strength">3</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">19</Stat>
+            <Stat id="speed">12</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="medusa">
+        <Description name="Medusa"/>
+        <Stats>
+            <Stat id="strength">9</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">9</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="minotaur">
+        <Description name="Minotaur"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">3</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="orc">
+        <Description name="Orc"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="orcshaman">
+        <Description name="Orc Shaman"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="orcchieftain">
+        <Description name="Orc Chieftain"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">6</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="urukhai">
+        <Description name="Uruk-Hai"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">6</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="urukhailord">
+        <Description name="Uruk-Hai Lord"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">8</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="undeadplaguebearer">
+        <Description name="Undead Plaguebearer"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">16</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">5</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="quetzal">
+        <Description name="Quetzal"/>
+        <Stats>
+            <Stat id="strength">8</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">14</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="snotling">
+        <Description name="Snotling"/>
+        <Stats>
+            <Stat id="strength">6</Stat>
+            <Stat id="toughness">5</Stat>
+            <Stat id="magic">3</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="swampdrake">
+        <Description name="Swamp Drake"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">15</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">12</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="undeadhorseman">
+        <Description name="Undead Horseman"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">7</Stat>
+            <Stat id="speed">13</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="wyvern">
+        <Description name="Wyvern"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">18</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="majorvampire">
+        <Description name="Major Vampire"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">10</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="vampire">
+        <Description name="Vampire"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">6</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">9</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="werewolf">
+        <Description name="Werewolf"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">15</Stat>
+            <Stat id="magic">6</Stat>
+            <Stat id="speed">12</Stat>
+        </Stats>
+    </Card>
+
+   <Card id="basilisk">
+        <Description name="Basilisk"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="chimaera">
+        <Description name="Chimaera"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">13</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="gargoyle">
+        <Description name="Gargoyle"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">19</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">3</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="ghoul">
+        <Description name="Ghoul"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">7</Stat>
+            <Stat id="speed">5</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="harpy">
+        <Description name="Harpy"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="griphon">
+        <Description name="Griphon"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">16</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="hippogriph">
+        <Description name="Hippogriph"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">8</Stat>
+            <Stat id="speed">14</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="kobold">
+        <Description name="kobold"/>
+        <Stats>
+            <Stat id="strength">8</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="murloc">
+        <Description name="Murlock"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">5</Stat>
+            <Stat id="magic">6</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="ogre">
+        <Description name="Ogre"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="manticore">
+        <Description name="Manticore"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">13</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="skeleton">
+        <Description name="Skeleton"/>
+        <Stats>
+            <Stat id="strength">9</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="skaven">
+        <Description name="Skaven"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">7</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="skavenwarrior">
+        <Description name="Skaven Warrior"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">10</Stat>
+            <Stat id="magic">7</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="skavenshaman">
+        <Description name="Faun"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">14</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="skavenwarlord">
+        <Description name="Skaven Warlord"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">8</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="satyr">
+        <Description name="Satyr"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">13</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="troll">
+        <Description name="Troll"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">17</Stat>
+            <Stat id="magic">8</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="wendigo">
+        <Description name="Wendigo"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">3</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">16</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="dryad">
+        <Description name="Dryad"/>
+        <Stats>
+            <Stat id="strength">3</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">17</Stat>
+            <Stat id="speed">9</Stat>
+        </Stats>
+    </Card>
+    
+    <Card id="jacaranda">
+        <Description name="Jacaranda"/>
+        <Stats>
+            <Stat id="strength">6</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="aatxe">
+        <Description name="Aatxe"/>
+        <Stats>
+            <Stat id="strength">15</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">6</Stat>
+            <Stat id="speed">10</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="leviathan">
+        <Description name="Leviathan"/>
+        <Stats>
+            <Stat id="strength">19</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">9</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="shade">
+        <Description name="Shade"/>
+        <Stats>
+            <Stat id="strength">7</Stat>
+            <Stat id="toughness">7</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="kraken">
+        <Description name="Kraken"/>
+        <Stats>
+            <Stat id="strength">19</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="serpent">
+        <Description name="Serpent"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">15</Stat>
+            <Stat id="speed">5</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="cetus">
+        <Description name="Cetus"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">13</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="siren">
+        <Description name="Siren"/>
+        <Stats>
+            <Stat id="strength">8</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">10</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="tiamat">
+        <Description name="Tiamat"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">9</Stat>
+            <Stat id="magic">11</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="jormungandr">
+        <Description name="Jormungandr"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">18</Stat>
+            <Stat id="magic">7</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="triton">
+        <Description name="Triton"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">13</Stat>
+            <Stat id="speed">10</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="amarok">
+        <Description name="Amarok"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">9</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="camazotz">
+        <Description name="Camazotz"/>
+        <Stats>
+            <Stat id="strength">9</Stat>
+            <Stat id="toughness">10</Stat>
+            <Stat id="magic">16</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="gogmagog">
+        <Description name="Gogmagog"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">16</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="hecatoncheires">
+        <Description name="Hecatoncheires"/>
+        <Stats>
+            <Stat id="strength">19</Stat>
+            <Stat id="toughness">18</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">5</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="kludde">
+        <Description name="Kludde"/>
+        <Stats>
+            <Stat id="strength">9</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">15</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="sleipnir">
+        <Description name="Sleipnir"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">14</Stat>
+            <Stat id="speed">17</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="fafnir">
+        <Description name="Fafnir"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">17</Stat>
+            <Stat id="magic">11</Stat>
+            <Stat id="speed">12</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="fenrir">
+        <Description name="Fenrir"/>
+        <Stats>
+            <Stat id="strength">17</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">14</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="ouroboros">
+        <Description name="Ouroboros"/>
+        <Stats>
+            <Stat id="strength">15</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">9</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
 </Deck>
