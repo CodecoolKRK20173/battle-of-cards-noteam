@@ -1,3 +1,13 @@
+/*
+wybiera karte z reki
+wybiera statystyke z karty
+położyc karte na stół 
+podać nick
+
+*/
+
+
+
 package main.java.jar.player;
 
 import main.java.jar.dao.CardDao;
