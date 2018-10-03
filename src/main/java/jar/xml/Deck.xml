@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deck>
+   <Card id="minorvampire">
+        <Description name="Minor Vampire"/>
+        <Stats>
+            <Stat id="strength">15</Stat>
+            <Stat id="toughness">5</Stat>
+            <Stat id="magic">15</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="goblinoverlord">
+        <Description name="Goblin Overlord"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">10</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="goblin">
+        <Description name="Goblin"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">6</Stat>
+            <Stat id="magic">3</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+   <Card id="behemot">
+        <Description name="Behemot"/>
+        <Stats>
+            <Stat id="strength">19</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">1</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="zombie">
+        <Description name="Zobie"/>
+        <Stats>
+            <Stat id="strength">10</Stat>
+            <Stat id="toughness">16</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">3</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="beholder">
+        <Description name="Beholder"/>
+        <Stats>
+            <Stat id="strength">5</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">18</Stat>
+            <Stat id="speed">4</Stat>
+        </Stats>
+    </Card>
+
+   <Card id="Dragon">
+        <Description name="Dragon"/>
+        <Stats>
+            <Stat id="strength">18</Stat>
+            <Stat id="toughness">20</Stat>
+            <Stat id="magic">11</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="banshee">
+        <Description name="Banshee"/>
+        <Stats>
+            <Stat id="strength">3</Stat>
+            <Stat id="toughness">5</Stat>
+            <Stat id="magic">19</Stat>
+            <Stat id="speed">18</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="airelemental">
+        <Description name="Air Elemental"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">4</Stat>
+            <Stat id="magic">9</Stat>
+            <Stat id="speed">20</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="earthelemental">
+        <Description name="Earth Elemental"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">20</Stat>
+            <Stat id="magic">3</Stat>
+            <Stat id="speed">3</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="fireelemental">
+        <Description name="Fire Elemental"/>
+        <Stats>
+            <Stat id="strength">3</Stat>
+            <Stat id="toughness">6</Stat>
+            <Stat id="magic">20</Stat>
+            <Stat id="speed">11</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="oakheart">
+        <Description name="Oakheart"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">15</Stat>
+            <Stat id="magic">5</Stat>
+            <Stat id="speed">4</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="centaur">
+        <Description name="Centaur"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="undeadaxeman">
+        <Description name="Undead Axeman"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">4</Stat>
+            <Stat id="speed">4</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="ettin">
+        <Description name="Ettin"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">10</Stat>
+            <Stat id="magic">10</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="ettinlord">
+        <Description name="Ettin Lord"/>
+        <Stats>
+            <Stat id="strength">16</Stat>
+            <Stat id="toughness">12</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="faun">
+        <Description name="Faun"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">6</Stat>
+        </Stats>
+    </Card>
+
+        <Card id="centaur">
+        <Description name="Centaur"/>
+        <Stats>
+            <Stat id="strength">12</Stat>
+            <Stat id="toughness">8</Stat>
+            <Stat id="magic">12</Stat>
+            <Stat id="speed">8</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="goblinshaman">
+        <Description name="Goblin"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">15</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="jotun">
+        <Description name="Jotun"/>
+        <Stats>
+            <Stat id="strength">14</Stat>
+            <Stat id="toughness">11</Stat>
+            <Stat id="magic">2</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+    <Card id="jotunshaman">
+        <Description name="Jotun Shaman"/>
+        <Stats>
+            <Stat id="strength">11</Stat>
+            <Stat id="toughness">14</Stat>
+            <Stat id="magic">14</Stat>
+            <Stat id="speed">7</Stat>
+        </Stats>
+    </Card>
+
+</Deck>
