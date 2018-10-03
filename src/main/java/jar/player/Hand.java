@@ -27,7 +27,7 @@ public class Hand
         }
     }
 
-    public Card drowCard ()
+    public Card drawCard ()
     {
         Card temp = deck.getDeck.get(currentCard);
         deck.getDeck().remove(temp);
