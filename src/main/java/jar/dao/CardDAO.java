@@ -1,4 +1,4 @@
-package dao;
+package main.java.jar.dao;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,8 +10,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import parsers.XMLLoader;
-import model.Card;
+import main.java.jar.parsers.XMLLoader;
+import main.java.jar.model.Card;
 
 public class CardDAO {
 
