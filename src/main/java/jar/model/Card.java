@@ -1,4 +1,4 @@
-package main.java.jar.model;
+package jar.model;
 
 public class Card {
 

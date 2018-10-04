@@ -1,9 +1,9 @@
-package main.java.jar.player;
+package jar.player;
 
-import main.java.jar.model.Card;
-import main.java.jar.model.Deck;
-import main.java.jar.View;
-import main.java.jar.Hand;
+import jar.model.Card;
+import jar.model.Deck;
+import jar.View;
+import jar.Hand;
 
 public class HumanPlayer extends Player{
     private Hand hand;

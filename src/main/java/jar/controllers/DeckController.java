@@ -1,8 +1,8 @@
-package main.java.jar.controllers;
+package jar.controllers;
 
-import main.java.jar.model.Deck;
-import main.java.jar.model.Card;
-import main.java.jar.dao.CardDAO;
+import jar.model.Deck;
+import jar.model.Card;
+import jar.dao.CardDAO;
 
 import java.util.List;
 

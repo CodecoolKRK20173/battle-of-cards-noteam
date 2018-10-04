@@ -1,6 +1,6 @@
-package main.java.jar.controllers;
-import main.java.jar.player;
-import main.java.jar.model;
+package jar.controllers;
+import jar.player;
+import jar.model;
 import java.util.ArrayList;
 import java.util.List;
 

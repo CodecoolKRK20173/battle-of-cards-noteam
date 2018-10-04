@@ -1,10 +1,10 @@
-package main.java.jar.controllers;
+package jar.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.jar.player.*;
-import main.java.jar.model.Deck;
+import jar.player.*;
+import jar.model.Deck;
 
 public class PlayerController {
     private int cardsAmount;

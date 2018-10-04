@@ -1,4 +1,4 @@
-package main.java.jar.parsers;
+package jar.parsers;
 
 import java.io.FileInputStream;
 import java.io.IOException;

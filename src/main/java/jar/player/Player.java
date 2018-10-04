@@ -1,4 +1,4 @@
-package main.java.jar.player;
+package jar.player;
 
 public abstract class Player {
     

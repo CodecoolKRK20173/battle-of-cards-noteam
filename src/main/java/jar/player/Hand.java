@@ -1,7 +1,7 @@
 
-package main.java.jar.player;
+package jar.player;
 
-import main.java.jar.model.*;
+import jar.model.*;
 
 public class Hand
 {
