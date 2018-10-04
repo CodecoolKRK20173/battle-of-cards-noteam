@@ -1,5 +1,7 @@
 package jar.model;
 
+import jar.View;
+
 public class Card {
 
     private String id;
@@ -62,7 +64,7 @@ public class Card {
         String stat2 = "Toughness: " + card.getToughness() +"\n";
         String stat3 = "Magic: " + card.getMagic() + "\n";
         String stat4 = "Speed: " + card.getSpeed() + "\n";
-        return title + stat1 + stat2 + stat3 + stat4;
+        return View.printCard(title, stat1, stat2, stat3, stat4);
     }
 
     @Override
