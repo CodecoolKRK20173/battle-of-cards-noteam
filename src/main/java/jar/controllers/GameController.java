@@ -24,12 +24,24 @@ public class GameController {
         Card winCard;
         String stat;
         Player playerWinner;
+        Scanner scanner = new Scanner(System.in);
         while((cardsOnTable = tableController.prepareTable()) != null) {
             stat = playerController.getPlayerList().get(tableController.getTable().getWhoseTurn()).chooseStat();
             winCard = compareCards(stat);
 
+            System.out.println(playerController.getPlayerList().get(0).getName() + " " + 
+                playerController.getPlayerList().get(0).getHand().getDeckSize());
+            
+            System.out.println(playerController.getPlayerList().get(1).getName() + " " + 
+                playerController.getPlayerList().get(0).getHand().getDeckSize());
+
+            System.out.println(playerController.getPlayerList().get(2).getName() + " " + 
+                playerController.getPlayerList().get(0).getHand().getDeckSize());
+
+            System.out.println(playerController.getPlayerList().get(3).getName() + " " + 
+                playerController.getPlayerList().get(0).getHand().getDeckSize());
+            
             addCardsToWinningPlayer(winCard);
-            Scanner scanner = new Scanner(System.in);
             scanner.next();
             tableController.getTable().changeTurn();
         }
@@ -71,7 +83,9 @@ public class GameController {
 
         for(int i = 0; i < 4; ++i) {
             player = playerController.getPlayerList().get(i);
+            System.out.println(player.equals(winCard));
             if (player.equals(winCard)) {
+                
                 player.getHand().addCard(tableController.getTable().getCardsOnTable());
                 break;
             }

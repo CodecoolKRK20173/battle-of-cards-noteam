@@ -14,22 +14,23 @@ public class View
 
     public static String getPlayerNick()
     {
-        //String userNick;
         Scanner nick = new Scanner(System.in);
         System.out.println("Please enter your nick: \n ");
-        String userNick = nick.nextLine();
-        //nick.close();
-        return userNick;
+        if (nick.hasNextLine()) {
+            return nick.nextLine();
+        }
+
+        return "";
     }
 
     public static String chooseCardStat()
     {
-        List <String> statisctics = Arrays.asList("strenght","toughness","magic","speed");
+        List <String> statisctics = Arrays.asList("strength","toughness","magic","speed");
         while (true)
         {
             Scanner stat = new Scanner(System.in);
 
-            System.out.println("Choose statisctic to fight:  strenght / toughness / magic / speed\n");
+            System.out.println("Choose statisctic to fight:  strength / toughness / magic / speed\n");
             String fightstat = stat.nextLine();
 
             if (statisctics.contains(fightstat))
@@ -39,7 +40,7 @@ public class View
 
             else
             {
-                System.out.println("There is no statistic like this. Please enter corect statistic!");
+                System.out.println("There is no statistic like this. Please enter correct statistic!");
             }
         }
     }

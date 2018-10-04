@@ -19,7 +19,7 @@ public class CardDAO {
     private Map<String, Card> cardMap = new HashMap<>();
 
     public CardDAO(){
-        xmlLoader.loadXmlDocument("/home/rageoverkill/jabba/cardsgame/battle-of-cards-noteam/battleofcards/xml/Deck.xml");
+        xmlLoader.loadXmlDocument("/home/kamil/Java/battle-of-cards-noteam/src/main/java/jar/xml/Deck.xml");
         createCardMap();
     }
 

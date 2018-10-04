@@ -12,17 +12,17 @@ public class StatComparator implements Comparator<Card>{
 
     public Card compare(Card o1, Card o2, String stat) {
         boolean whichWin;
-        switch (stat) {
-            case "Strength":
+        switch (stat.toLowerCase()) {
+            case "strength":
                 whichWin = compare(o1.getStrength(), o2.getStrength());
                 return (whichWin) ? o1 : o2;
-            case "Speed":
+            case "speed":
                 whichWin = compare(o1.getSpeed(), o2.getSpeed());
                 return (whichWin) ? o1 : o2;
-            case "Magic":
+            case "magic":
                 whichWin = compare(o1.getMagic(), o2.getMagic());
                 return (whichWin) ? o1 : o2;
-            case "Toughness":
+            case "toughness":
                 whichWin = compare(o1.getToughness(), o2.getToughness());
                 return (whichWin) ? o1 : o2;
         }

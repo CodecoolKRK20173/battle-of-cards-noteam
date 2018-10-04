@@ -16,6 +16,7 @@ public class NPC extends Player implements Comparable<Player>{
 
     public Card getCard() {
         currCard = hand.drawCard();
+        currCard.setHashCodeId(hashCodeId);
         return currCard;
     }
 
