@@ -17,16 +17,21 @@ public class NPC extends Player{
         return currCard;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
     public String chooseStat() {
         int bestStat = currCard.getStrength();
         String stat = "strength";
-        if (currCard.getToughness() > currCard) {
+        if (currCard.getToughness() > bestStat) {
             bestStat = currCard.getToughness();
             stat = "toughness";
-        } else if (currCard.getMagic() > currCard) {
+        } else if (currCard.getMagic() > bestStat) {
             bestStat = currCard.getMagic();
             stat = "magic";
-        } else if (currCard.getSpeed() > currCard) {
+        } else if (currCard.getSpeed() > bestStat) {
             bestStat = currCard.getSpeed();
             stat = "speed";
         }

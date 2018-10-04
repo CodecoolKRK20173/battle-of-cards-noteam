@@ -26,5 +26,12 @@ public class Table {
     public List<Card> getCardsOnTable() {
         return cardsOnTable;
     }
+
+    /**
+     * @return the whoseTurn
+     */
+    public int getWhoseTurn() {
+        return whoseTurn;
+    }
 }
 
