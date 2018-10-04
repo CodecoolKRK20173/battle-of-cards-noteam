@@ -3,8 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Table {
-    List<Card> cardsOnTable = new ArrayList<>();
-    int whoseTurn = 0;
+    private List<Card> cardsOnTable = new ArrayList<>();
+    private int whoseTurn = 0;
+    private final int playerNumber = 4;
     
 
     public void addCardToTable(Card card) {
@@ -17,7 +18,7 @@ public class Table {
 
     public void changeTurn() {
         whoseTurn++;
-        if (whoseTurn == 4 ) {
+        if (whoseTurn == playerNumber ) {
             whoseTurn = 0;
         }
     }

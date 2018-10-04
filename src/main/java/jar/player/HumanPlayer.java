@@ -7,11 +7,9 @@ public class HumanPlayer extends Player implements Comparable<Player>{
     private Hand hand;
     private String name;
     private Card currCard;
-    private int hashCodeId;
 
-    public HumanPlayer(Hand hand, int id) {
+    public HumanPlayer(Hand hand) {
         this.hand = hand;
-        this.hashCodeId = id;
         setName();
     }
 
@@ -33,6 +31,8 @@ public class HumanPlayer extends Player implements Comparable<Player>{
 
     public String chooseStat()
     {
+        System.out.println(View.printCard(currCard.getName(), "" + currCard.getStrength(), "" + currCard.getToughness(), 
+                       "" + currCard.getMagic(), "" + currCard.getSpeed()));
         String playerStat = View.chooseCardStat();
         return playerStat;
     }

@@ -8,6 +8,9 @@ import jar.player.Player;
 
 import java.io.FileNotFoundException;
 import java.io.File;
+
+import jar.controllers.PlayerController;
+import jar.controllers.TableController;
 import jar.model.Table;
 
 public class View 
@@ -27,10 +30,10 @@ public class View
     public static String chooseCardStat()
     {
         List <String> statisctics = Arrays.asList("strength","toughness","magic","speed");
+        Scanner stat = new Scanner(System.in);
         while (true)
         {
-            Scanner stat = new Scanner(System.in);
-
+            
             System.out.println("Choose statisctic to fight:  strength / toughness / magic / speed\n");
             String fightstat = stat.nextLine();
 
@@ -48,22 +51,30 @@ public class View
 
     public static int getNumberOfPlayers ()
     {
+        Scanner nr = new Scanner(System.in);
+        int maxAmountOfPlayers = 4;
+        int playersAmount = -1;
+
         while (true)
         {
-            int maxAmountOfPlayers = 4;
-            Scanner nr = new Scanner(System.in);
-
+            
             System.out.println("Please enter amount of players (max 4): \n");
-            int playersAmount = nr.nextInt();
+            if (nr.hasNextInt()) {
+                playersAmount = nr.nextInt();
+            } else {
+                nr.nextLine();
+            }
 
             if (playersAmount <= maxAmountOfPlayers)
             {
                 return playersAmount;
             }
 
-            else
+            else if (playersAmount == -1) {
+                System.out.println("Wrong amount of players.");
+            } else
             {
-                System.out.println("To many players. There could be max 4 players!");
+                System.out.println("Top many players. There could be max 4 players!");
             }
 
         }
@@ -71,7 +82,7 @@ public class View
 
     public void menuScreen()
     {
-        System.out.println("\033\143");
+        clearScreen();
 
         try
         {
@@ -92,13 +103,13 @@ public class View
     }
 
 
-    public void entryScreen()
+    public static void entryScreen()
     {
-        System.out.println("\033\143");
+        clearScreen();
 
         try
         {
-            Scanner file = new Scanner (new File("ASCII/logo.txt"));
+            Scanner file = new Scanner (new File("jar/ASCII/logo.txt"));
 
             while (file.hasNextLine())
             {
@@ -112,6 +123,15 @@ public class View
             System.out.println("File not found!");
         }
 
+        sleep();
+    }
+
+    private static void sleep() {
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public int getOptionFromUser()
@@ -128,11 +148,16 @@ public class View
     {
         int maxNrOfCardOnHand = 20;
         Scanner cardNr = new Scanner(System.in);
+        int cardNrOnHand = 0;
 
         while (true)
         {
             System.out.println("Give amount of cards on hand (max number is 20):\n");
-            int cardNrOnHand = cardNr.nextInt();
+            if (cardNr.hasNextInt()) {
+                cardNrOnHand = cardNr.nextInt();
+            } else {
+                cardNr.nextLine();
+            }
             if (cardNrOnHand < maxNrOfCardOnHand && cardNrOnHand > 0)
             {
                 return cardNrOnHand;
@@ -180,4 +205,16 @@ public class View
         return temp;
     }
 
+    public static void clearScreen() {
+        System.out.println("\033\143");
+    }
+
+    public static void printTable(PlayerController playerController, TableController tableController) {
+        int playerNumber = 4;
+        for(int i = 0; i < playerNumber; ++i) {
+            System.out.println(playerController.getPlayerList().get(i).getName() + ":");
+            System.out.println("Amount of cards: " + playerController.getPlayerList().get(i).getHand().getDeckSize());
+            System.out.println(tableController.getTable().getCardsOnTable().get(i));
+        }
+    }
 }

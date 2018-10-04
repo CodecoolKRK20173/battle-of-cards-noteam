@@ -6,12 +6,10 @@ public class NPC extends Player implements Comparable<Player>{
     private Hand hand;
     private String name;
     private Card currCard;
-    private int hashCodeId;
 
-    public NPC(Hand hand, String name, int id) {
+    public NPC(Hand hand, String name) {
         this.hand = hand;
         this.name = name;
-        this.hashCodeId = id;
     }
 
     public Card getCard() {

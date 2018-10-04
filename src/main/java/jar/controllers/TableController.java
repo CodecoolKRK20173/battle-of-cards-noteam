@@ -17,11 +17,9 @@ public class TableController {
         for (int i = 0; i < players.size(); i++) {
             
             Card temp = players.get(i).getCard();
-            
+
             if (temp != null) {
                 table.addCardToTable(temp);
-            } else {
-                return null;
             }
         
         }
@@ -35,4 +33,12 @@ public class TableController {
         return table;
     }
     
+    public boolean isEndGame() {
+        for (int i = 0; i < players.size(); i++) {
+            if(players.get(i).getHand().getDeckSize() == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
