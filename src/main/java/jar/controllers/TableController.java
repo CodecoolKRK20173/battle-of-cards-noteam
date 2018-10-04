@@ -1,10 +1,12 @@
-package main.java.jar.model;
-package main.java.jar.player;
+package main.java.jar.controllers;
+import main.java.jar.player;
+import main.java.jar.model;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TableController {
-    List<Card> cardsOnTable = new ArrayList<>();
-
-    public List<Card> round(List<Player> players, String stat) {
+    Table table = new Table();
+    public List<Card> prepareTable(List<Player> players) {
         
         
         for (int i = 0; i < players.size(); i++) {
@@ -12,13 +14,15 @@ public class TableController {
             Card temp = players[i].drawCard();
             
             if (temp != null) {
-                cardsOnTable.add(temp);
+                addCardToTable(temp);
             } else {
                 return null;
             }
         
-        return cardsOnTable;
+        return getCardsOnTable();
         }
 
     }
+
+    
 }
