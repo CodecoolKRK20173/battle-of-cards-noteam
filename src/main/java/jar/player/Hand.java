@@ -2,6 +2,7 @@
 package jar.player;
 
 import jar.model.*;
+import java.util.List;
 
 public class Hand
 {
@@ -29,7 +30,7 @@ public class Hand
 
     public Card drawCard ()
     {
-        Card temp = deck.getDeck.get(currentCard);
+        Card temp = deck.getDeck().get(currentCard);
         deck.getDeck().remove(temp);
         return temp;
     }

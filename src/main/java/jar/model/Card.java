@@ -1,4 +1,9 @@
 package jar.model;
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 959dfdbc3fed244608333a2b4deffafc1c05949b
 
 public class Card {
 
@@ -8,6 +13,7 @@ public class Card {
     private int toughness;
     private int magic;
     private int speed;
+    private int hashCodeId;
 
     public Card(String id, String name){
         this.id = id;
@@ -52,6 +58,24 @@ public class Card {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public String toString(Card card){
+        String title = "Title: " + card.name +"\n";
+        String stat1 = "Strength: " + card.getStrength() +"\n";
+        String stat2 = "Toughness: " + card.getToughness() +"\n";
+        String stat3 = "Magic: " + card.getMagic() + "\n";
+        String stat4 = "Speed: " + card.getSpeed() + "\n";
+        return title + stat1 + stat2 + stat3 + stat4;
+    }
+
+    public void setHashCodeId(int hashCodeId) {
+        this.hashCodeId = hashCodeId;
+    }
+
+    @Override
+    public int hashCode(){
+        return hashCodeId;
     }
 
 }

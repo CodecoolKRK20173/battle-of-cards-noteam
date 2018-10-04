@@ -1,9 +1,7 @@
 package jar.player;
 
 import jar.model.Card;
-import jar.model.Deck;
 import jar.View;
-import jar.player.Hand;
 
 public class HumanPlayer extends Player{
     private Hand hand;
@@ -28,13 +26,13 @@ public class HumanPlayer extends Player{
 
     public String setName()
     {
-        String userNick = getPlayerNick();
+        String userNick = View.getPlayerNick();
         return userNick;
     }
 
-    public String getStat()
+    public String chooseStat()
     {
-        String playerStat = chooseCardStat();
+        String playerStat = View.chooseCardStat();
         return playerStat;
     }
 }

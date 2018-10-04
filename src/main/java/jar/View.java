@@ -1,17 +1,15 @@
 package jar;
 
-import java.awt.List;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-import jar.model.Table;
 import java.io.File;
 
 public class View 
 {
 
-    public String getPlayerNick()
+    public static String getPlayerNick()
     {
         //String userNick;
         Scanner nick = new Scanner(System.in);
@@ -21,7 +19,7 @@ public class View
         return userNick;
     }
 
-    public String chooseCardStat()
+    public static String chooseCardStat()
     {
         List <String> statisctics = Arrays.asList("strenght","toughness","magic","speed");
         while (true)
@@ -43,7 +41,7 @@ public class View
         }
     }
 
-    public int getNumberOfPlayers ()
+    public static int getNumberOfPlayers ()
     {
         while (true)
         {
@@ -97,7 +95,7 @@ public class View
         return option;
     }
 
-    public int getNumberOfCards()
+    public static int getNumberOfCards()
     {
         int maxNrOfCardOnHand = 20;
         Scanner cardNr = new Scanner(System.in);

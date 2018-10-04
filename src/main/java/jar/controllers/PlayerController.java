@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jar.player.*;
-import jar.model.Deck;
+import jar.View;
 
 public class PlayerController {
     private int cardsAmount;
@@ -14,8 +14,8 @@ public class PlayerController {
 
     public PlayerController(DeckController deckController) {
         this.deckController = deckController;
-        this.cardsAmount = View.getAmountOfCards();
-        this.npcNumber = View.getNPCNumber();
+        this.cardsAmount = View.getNumberOfCards();
+        this.npcNumber = 4 - View.getNumberOfPlayers();
 
         createPlayerList();
     }
@@ -27,7 +27,7 @@ public class PlayerController {
         }
 
         for(int i = 0; i < 4 - npcNumber; ++i) {
-            playerList.add(new HumanPlayer(deckController.loadDeck(cardsAmount)));
+            playerList.add(new HumanPlayer(new Hand(deckController.loadDeck(cardsAmount))));
         }
     }
 
