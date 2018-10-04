@@ -1,6 +1,9 @@
 package jar.model;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 959dfdbc3fed244608333a2b4deffafc1c05949b
 
 public class Card {
 

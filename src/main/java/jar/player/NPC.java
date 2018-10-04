@@ -1,10 +1,11 @@
-package main.java.jar.player;
+package jar.player;
 
-import main.java.jar.model.*;
+import jar.model.*;
 
 public class NPC extends Player{
     private Hand hand;
     private String name;
+    private Card currCard;
 
     public NPC(Hand hand, String name) {
         this.hand = hand;
@@ -12,21 +13,21 @@ public class NPC extends Player{
     }
 
     public Card getCard() {
-        return hand.getCard();
+        currCard = hand.drawCard();
+        return currCard;
     }
 
     public String chooseStat() {
-        Card currCard = hand.getCard();
         int bestStat = currCard.getStrength();
         String stat = "strength";
         if (currCard.getToughness() > currCard) {
             bestStat = currCard.getToughness();
             stat = "toughness";
-        } else (currCard.getMagic() > currCard) {
-            bestStat = currCard.getToughness();
+        } else if (currCard.getMagic() > currCard) {
+            bestStat = currCard.getMagic();
             stat = "magic";
-        } else (currCard.getSpeed() > currCard) {
-            bestStat = currCard.getToughness();
+        } else if (currCard.getSpeed() > currCard) {
+            bestStat = currCard.getSpeed();
             stat = "speed";
         }
 
