@@ -5,17 +5,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.io.File;
+import jar.model.Table;
 
 public class View 
 {
 
     public static String getPlayerNick()
     {
-        //String userNick;
         Scanner nick = new Scanner(System.in);
         System.out.println("Please enter your nick: \n ");
         String userNick = nick.nextLine();
-        //nick.close();
+        nick.close();
         return userNick;
     }
 
@@ -86,12 +86,36 @@ public class View
 
     }
 
+
+    public void entryScreen()
+    {
+        System.out.println("\033\143");
+
+        try
+        {
+            Scanner file = new Scanner (new File("ASCII/logo.txt"));
+
+            while (file.hasNextLine())
+            {
+                System.out.println(file.nextLine());
+            }
+            file.close();
+        }
+
+        catch (FileNotFoundException e) 
+        {
+            System.out.println("File not found!");
+        }
+
+    }
+
     public int getOptionFromUser()
     {
         Scanner opt = new Scanner(System.in);
 
         System.out.println("Option: ");
         int option = opt.nextInt();
+        opt.close();
         return option;
     }
 
