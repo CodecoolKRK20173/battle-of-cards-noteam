@@ -23,37 +23,39 @@ public class GameController {
         List<Card> cardsOnTable;
         Card winCard;
         String stat;
-        Player playerWinner;
         Scanner scanner = new Scanner(System.in);
         while((cardsOnTable = tableController.prepareTable()) != null) {
             stat = playerController.getPlayerList().get(tableController.getTable().getWhoseTurn()).chooseStat();
             winCard = compareCards(stat);
+            for(int i = 0; i < 4; ++i) {
+                System.out.println(playerController.getPlayerList().get(i).getName() + ":");
+                System.out.println("Amount of cards: " + playerController.getPlayerList().get(i).getHand().getDeckSize());
+                System.out.println(tableController.getTable().getCardsOnTable().get(i));
+            }
 
-            System.out.println(playerController.getPlayerList().get(0).getName() + " " + 
-                playerController.getPlayerList().get(0).getHand().getDeckSize());
-            
-            System.out.println(playerController.getPlayerList().get(1).getName() + " " + 
-                playerController.getPlayerList().get(1).getHand().getDeckSize());
-
-            System.out.println(playerController.getPlayerList().get(2).getName() + " " + 
-                playerController.getPlayerList().get(2).getHand().getDeckSize());
-
-            System.out.println(playerController.getPlayerList().get(3).getName() + " " + 
-                playerController.getPlayerList().get(3).getHand().getDeckSize());
-            
+            scanner.nextLine();
             addCardsToWinningPlayer(winCard);
-            scanner.next();
-            tableController.getTable().changeTurn();
-        }
+            System.out.println("\033\143");
 
+            tableController.getTable().changeTurn();
+            
+            
+        }
+        for(int i = 0; i < 4; ++i) {
+            System.out.println(playerController.getPlayerList().get(i).getName() + ":");
+            System.out.println("Amount of cards: " + playerController.getPlayerList().get(i).getHand().getDeckSize());
+            System.out.println();
+            }
+        
         checkWinner();
 
     }
 
     private void checkWinner() {
-        Collections.sort(playerController.getPlayerList());
+        Collections.sort(playerController.getPlayerList(), Collections.reverseOrder());
         List<Player> winners = new ArrayList<>();
         winners.add(playerController.getPlayerList().get(0));
+
         for(int i = 1; i < 4; ++i) {
             Player anotherPlayer = playerController.getPlayerList().get(i);
             if(winners.get(0).compareTo(anotherPlayer) == 0) {
@@ -90,8 +92,5 @@ public class GameController {
         }
 
     }
-
-    // kto ma najwięcej kart comparable
-
 
 }

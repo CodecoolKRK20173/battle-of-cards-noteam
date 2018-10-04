@@ -58,12 +58,12 @@ public class Card {
         this.speed = speed;
     }
 
-    public String toString(Card card){
-        String title = "Title: " + card.name +"\n";
-        String stat1 = "Strength: " + card.getStrength() +"\n";
-        String stat2 = "Toughness: " + card.getToughness() +"\n";
-        String stat3 = "Magic: " + card.getMagic() + "\n";
-        String stat4 = "Speed: " + card.getSpeed() + "\n";
+    public String toString(){
+        String title = "" + name ;
+        String stat1 = "" + getStrength();
+        String stat2 = "" + getToughness();
+        String stat3 = "" + getMagic();
+        String stat4 = "" + getSpeed();
         return View.printCard(title, stat1, stat2, stat3, stat4);
     }
 

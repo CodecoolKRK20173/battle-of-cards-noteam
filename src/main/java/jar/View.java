@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import jar.player.Player;
-import jdk.internal.joptsimple.internal.Strings;
 
 import java.io.FileNotFoundException;
 import java.io.File;
@@ -155,21 +154,30 @@ public class View
 
     public static String printCard(String title, String stat1, String stat2, String stat3, String stat4)
     {
-        String name = String.format(" Name: %s", title);
+        String name = String.format(" Name: %s", title) ;
         String statStrenth = String.format(" Strength: %s", stat1);
         String statToughness = String.format(" Toughness: %s", stat2);
         String statMagic = String.format(" Magic: %s", stat3);
         String statSpeed = String.format(" Speed: %s", stat4);
 
-        String cardprint = (Strings.repeat('_', 26)) + "\n";
-        cardprint += "| " + name + Strings.repeat(' ', 26 -title.length()) + "|" + "\n";
-        cardprint += "| " + stat1 + Strings.repeat(' ', 26 - stat1.length()) + "|" + "\n";
-        cardprint += "| " + stat2 + Strings.repeat(' ', 26 - stat2.length()) + "|" + "\n";
-        cardprint += "| " + stat3 + Strings.repeat(' ', 26 - stat3.length()) + "|" + "\n";
-        cardprint += "| " + stat4 + Strings.repeat(' ', 26 - stat4.length()) + "|" + "\n";
+        String cardprint = " " + (repeat('_', 27)) + "\n";
+        cardprint += "| " + name + repeat(' ', 26 -name.length()) + "|" + "\n";
+        cardprint += "| " + statStrenth + repeat(' ', 26 - statStrenth.length()) + "|" + "\n";
+        cardprint += "| " + statToughness + repeat(' ', 26 - statToughness.length()) + "|" + "\n";
+        cardprint += "| " + statMagic + repeat(' ', 26 - statMagic.length()) + "|" + "\n";
+        cardprint += "| " + statSpeed + repeat(' ', 26 - statSpeed.length()) + "|" + "\n";
+        cardprint += "|" + (repeat('_', 27)) + "|\n";
 
         return cardprint;
     }
 
+    private static String repeat(char c, int n) {
+        String temp = "";
+        for(int i = 0; i < n; ++i) {
+            temp += c;
+        }
+
+        return temp;
+    }
 
 }

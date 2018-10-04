@@ -48,6 +48,12 @@ public class NPC extends Player implements Comparable<Player>{
     
     @Override
     public int compareTo(Player o) {
-        return getHand().getDeckSize() - o.getHand().getDeckSize();
+        if(getHand().getDeckSize() > o.getHand().getDeckSize()) {
+            return 1;
+        } else if (getHand().getDeckSize() < o.getHand().getDeckSize()) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 }
