@@ -15,6 +15,7 @@ public class Card {
     public Card(String id, String name){
         this.id = id;
         this.name = name;
+        createHashCodeForCard();
     }
 
     public String getId() {
@@ -66,14 +67,17 @@ public class Card {
         return View.printCard(title, stat1, stat2, stat3, stat4);
     }
 
-    public void setHashCodeId(int hashCodeId) {
-        this.hashCodeId = hashCodeId;
-    }
-
     @Override
     public int hashCode(){
         return hashCodeId;
     }
 
+    private void createHashCodeForCard(){
+        int startingNumber = getStrength()*getToughness()*getMagic()*getSpeed();
+        String name = getName();
+        String middleLetters = "" + Character.getNumericValue(name.charAt(0)) + Character.getNumericValue(name.charAt(1)) + Character.getNumericValue(name.charAt(2));
+        int endingNumber = getStrength() + getToughness() + getMagic() + getSpeed();
+        hashCodeId = Integer.parseInt("" + startingNumber + middleLetters + endingNumber);
+    }
 }
 

@@ -18,19 +18,21 @@ public class View
     {
         Scanner nick = new Scanner(System.in);
         System.out.println("Please enter your nick: \n ");
-        String userNick = nick.nextLine();
-        nick.close();
-        return userNick;
+        if (nick.hasNextLine()) {
+            return nick.nextLine();
+        }
+
+        return "";
     }
 
     public static String chooseCardStat()
     {
-        List <String> statisctics = Arrays.asList("strenght","toughness","magic","speed");
+        List <String> statisctics = Arrays.asList("strength","toughness","magic","speed");
         while (true)
         {
             Scanner stat = new Scanner(System.in);
 
-            System.out.println("Choose statisctic to fight:  strenght / toughness / magic / speed\n");
+            System.out.println("Choose statisctic to fight:  strength / toughness / magic / speed\n");
             String fightstat = stat.nextLine();
 
             if (statisctics.contains(fightstat))
@@ -40,7 +42,7 @@ public class View
 
             else
             {
-                System.out.println("There is no statistic like this. Please enter corect statistic!");
+                System.out.println("There is no statistic like this. Please enter correct statistic!");
             }
         }
     }
@@ -160,11 +162,11 @@ public class View
         String statSpeed = String.format(" Speed: %s", stat4);
 
         String cardprint = (Strings.repeat('_', 26)) + "\n";
-        cardprint += "| " + name + Strings.repeat(' ', 26 -title.length()) + "|") + "\n";
-        cardprint += "| " + stat1 + Strings.repeat(' ', 26 - stat1.length()) + "|") + "\n";
-        cardprint += "| " + stat2 + Strings.repeat(' ', 26 - stat2.length()) + "|") + "\n";
-        cardprint += "| " + stat3 + Strings.repeat(' ', 26 - stat3.length()) + "|") + "\n";
-        cardprint += "| " + stat4 + Strings.repeat(' ', 26 - stat4.length()) + "|") + "\n";
+        cardprint += "| " + name + Strings.repeat(' ', 26 -title.length()) + "|" + "\n";
+        cardprint += "| " + stat1 + Strings.repeat(' ', 26 - stat1.length()) + "|" + "\n";
+        cardprint += "| " + stat2 + Strings.repeat(' ', 26 - stat2.length()) + "|" + "\n";
+        cardprint += "| " + stat3 + Strings.repeat(' ', 26 - stat3.length()) + "|" + "\n";
+        cardprint += "| " + stat4 + Strings.repeat(' ', 26 - stat4.length()) + "|" + "\n";
 
         return cardprint;
     }

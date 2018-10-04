@@ -45,11 +45,6 @@ public class NPC extends Player implements Comparable<Player>{
     public Hand getHand() {
         return hand;
     }
-
-    @Override
-    public int hashCode() {
-        return hashCodeId;
-    }
     
     @Override
     public int compareTo(Player o) {

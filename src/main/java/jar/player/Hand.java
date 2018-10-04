@@ -30,9 +30,12 @@ public class Hand
 
     public Card drawCard ()
     {
-        Card temp = deck.getDeck().get(currentCard);
-        deck.getDeck().remove(temp);
-        return temp;
+        if (getDeckSize() > 0 ) {
+            Card temp = deck.getDeck().get(currentCard);
+            deck.getDeck().remove(temp);
+            return temp;
+        }
+        return null;
     }
 
     public void addCard(List<Card> cards)

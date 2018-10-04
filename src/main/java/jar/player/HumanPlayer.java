@@ -26,10 +26,9 @@ public class HumanPlayer extends Player implements Comparable<Player>{
         return name;
     }
 
-    public String setName()
+    public void setName()
     {
-        String userNick = View.getPlayerNick();
-        return userNick;
+        this.name = View.getPlayerNick();
     }
 
     public String chooseStat()
@@ -41,11 +40,6 @@ public class HumanPlayer extends Player implements Comparable<Player>{
     @Override
     public Hand getHand() {
         return hand;
-    }
-
-    @Override
-    public int hashCode() {
-        return hashCodeId;
     }
 
     @Override
