@@ -73,5 +73,13 @@ public class Card {
         return hashCodeId;
     }
 
+    private String createHashCodeForCard(Card card){
+        int startingNumber = card.getStrength()*card.getToughness()*card.getMagic()*card.getSpeed();
+        String name = card.getName();
+        String middleLetters = Character.toString(name.charAt(0)) + Character.toString(name.charAt(1)) + Character.toString(name.charAt(2));
+        int endingNumber = card.getStrength() + card.getToughness() + card.getMagic() + card.getSpeed();
+        String result = (startingNumber + middleLetters + endingNumber).toUpperCase();
+        return result;
+    }
 }
 
