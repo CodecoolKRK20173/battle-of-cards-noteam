@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
+import jar.model.Table;
+import java.io.File;
 
 public class View 
 {
@@ -104,19 +106,22 @@ public class View
         {
             System.out.println("Give amount of cards on hand (max number is 20):\n");
             int cardNrOnHand = cardNr.nextInt();
-            if (cardNrOnHand < maxNrOfCardOnHand)
+            if (cardNrOnHand < maxNrOfCardOnHand && cardNrOnHand > 0)
             {
                 return cardNrOnHand;
             }
             else
             {
-                System.out.println("To many cards!");
+                System.out.println("Wrong number of cards!");
             }
                 
         }
     }
 
-
+    public void printCardOnTable (Table table)
+    {
+        table.getCardsOnTable();
+    }
 
 
 
