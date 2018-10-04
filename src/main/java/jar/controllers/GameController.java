@@ -33,13 +33,13 @@ public class GameController {
                 playerController.getPlayerList().get(0).getHand().getDeckSize());
             
             System.out.println(playerController.getPlayerList().get(1).getName() + " " + 
-                playerController.getPlayerList().get(0).getHand().getDeckSize());
+                playerController.getPlayerList().get(1).getHand().getDeckSize());
 
             System.out.println(playerController.getPlayerList().get(2).getName() + " " + 
-                playerController.getPlayerList().get(0).getHand().getDeckSize());
+                playerController.getPlayerList().get(2).getHand().getDeckSize());
 
             System.out.println(playerController.getPlayerList().get(3).getName() + " " + 
-                playerController.getPlayerList().get(0).getHand().getDeckSize());
+                playerController.getPlayerList().get(3).getHand().getDeckSize());
             
             addCardsToWinningPlayer(winCard);
             scanner.next();
@@ -83,9 +83,7 @@ public class GameController {
 
         for(int i = 0; i < 4; ++i) {
             player = playerController.getPlayerList().get(i);
-            System.out.println(player.equals(winCard));
-            if (player.equals(winCard)) {
-                
+            if (tableController.getTable().getCardsOnTable().get(i).equals(winCard)) {
                 player.getHand().addCard(tableController.getTable().getCardsOnTable());
                 break;
             }

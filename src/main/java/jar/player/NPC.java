@@ -16,7 +16,6 @@ public class NPC extends Player implements Comparable<Player>{
 
     public Card getCard() {
         currCard = hand.drawCard();
-        currCard.setHashCodeId(hashCodeId);
         return currCard;
     }
 
@@ -45,11 +44,6 @@ public class NPC extends Player implements Comparable<Player>{
     @Override
     public Hand getHand() {
         return hand;
-    }
-
-    @Override
-    public int hashCode() {
-        return hashCodeId;
     }
     
     @Override
