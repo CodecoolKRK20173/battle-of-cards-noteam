@@ -23,11 +23,11 @@ public class PlayerController {
     private void createPlayerList() {
         for(int i = 0; i < npcNumber; ++i) {
             Hand hand = new Hand(deckController.loadDeck(cardsAmount));
-            playerList.add(new NPC(hand, "Computer " + (i+1)));
+            playerList.add(new NPC(hand, "Computer " + (i+1), i));
         }
 
-        for(int i = 0; i < 4 - npcNumber; ++i) {
-            playerList.add(new HumanPlayer(new Hand(deckController.loadDeck(cardsAmount))));
+        for(int i = npcNumber; i < 4; ++i) {
+            playerList.add(new HumanPlayer(new Hand(deckController.loadDeck(cardsAmount)), i));
         }
     }
 

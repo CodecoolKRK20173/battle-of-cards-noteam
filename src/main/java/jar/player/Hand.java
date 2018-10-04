@@ -43,4 +43,7 @@ public class Hand
         }
     }
 
+    public int getDeckSize() {
+        return deck.getDeck().size();
+    }
 }

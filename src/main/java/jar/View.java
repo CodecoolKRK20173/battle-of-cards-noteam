@@ -3,6 +3,9 @@ package jar;
 import java.util.List;
 import java.util.Arrays;
 import java.util.Scanner;
+
+import jar.player.Player;
+
 import java.io.FileNotFoundException;
 import java.io.File;
 import jar.model.Table;
@@ -140,9 +143,11 @@ public class View
         }
     }
 
-    public void printCardOnTable (Table table)
-    {
-        table.getCardsOnTable();
+    public static void printWinners(List<Player> winners) {
+        System.out.println("Winner: ");
+        for(int i = 0; i < winners.size(); ++i) {
+            System.out.println(winners.get(i).getName());
+        }
     }
 
 
