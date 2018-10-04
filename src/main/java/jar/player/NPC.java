@@ -2,14 +2,16 @@ package jar.player;
 
 import jar.model.*;
 
-public class NPC extends Player{
+public class NPC extends Player implements Comparable<Player>{
     private Hand hand;
     private String name;
     private Card currCard;
+    private int hashCodeId;
 
-    public NPC(Hand hand, String name) {
+    public NPC(Hand hand, String name, int id) {
         this.hand = hand;
         this.name = name;
+        this.hashCodeId = id;
     }
 
     public Card getCard() {
@@ -38,5 +40,19 @@ public class NPC extends Player{
 
         return stat;
     }
+
+    @Override
+    public Hand getHand() {
+        return hand;
+    }
+
+    @Override
+    public int hashCode() {
+        return hashCodeId;
+    }
     
+    @Override
+    public int compareTo(Player o) {
+        return getHand().getDeckSize() - o.getHand().getDeckSize();
+    }
 }
