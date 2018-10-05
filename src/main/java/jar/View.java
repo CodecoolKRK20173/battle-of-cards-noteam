@@ -171,6 +171,7 @@ public class View
     }
 
     public static void printWinners(List<Player> winners) {
+        System.out.println();
         System.out.println("Winner: ");
         for(int i = 0; i < winners.size(); ++i) {
             System.out.println(winners.get(i).getName());
@@ -215,6 +216,15 @@ public class View
             System.out.println(playerController.getPlayerList().get(i).getName() + ":");
             System.out.println("Amount of cards: " + playerController.getPlayerList().get(i).getHand().getDeckSize());
             System.out.println(tableController.getTable().getCardsOnTable().get(i));
+        }
+    }
+
+    public static void printEnding(PlayerController playerController) {
+        int playerNumber = 4;
+        for(int i = 0; i < playerNumber; ++i) {
+            System.out.println(playerController.getPlayerList().get(i).getName() + ":");
+            System.out.println("Amount of cards: " + playerController.getPlayerList().get(i).getHand().getDeckSize());
+            System.out.println();
         }
     }
 }

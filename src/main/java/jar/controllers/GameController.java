@@ -31,6 +31,7 @@ public class GameController {
 
             stat = playerController.getPlayerList().get(tableController.getTable().getWhoseTurn()).chooseStat();
             winCard = compareCards(stat);
+            System.out.println("Playing by " + stat + " stat.");
             View.printTable(playerController, tableController);
 
             scanner.nextLine();
@@ -40,7 +41,7 @@ public class GameController {
             tableController.getTable().changeTurn();
         }
 
-        View.printTable(playerController, tableController);
+        View.printEnding(playerController);
         
         checkWinner();
     }
