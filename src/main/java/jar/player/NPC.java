@@ -1,5 +1,6 @@
 package jar.player;
 
+import jar.enums.StatEnum;
 import jar.model.*;
 
 public class NPC extends Player implements Comparable<Player>{
@@ -24,19 +25,20 @@ public class NPC extends Player implements Comparable<Player>{
 
     public String chooseStat() {
         int bestStat = currCard.getStrength();
-        String stat = "strength";
+        StatEnum statEnum = StatEnum.STRENGTH;
+
         if (currCard.getToughness() > bestStat) {
             bestStat = currCard.getToughness();
-            stat = "toughness";
+            statEnum = StatEnum.TOUGHNESS;
         } else if (currCard.getMagic() > bestStat) {
             bestStat = currCard.getMagic();
-            stat = "magic";
+            statEnum = StatEnum.MAGIC;
         } else if (currCard.getSpeed() > bestStat) {
             bestStat = currCard.getSpeed();
-            stat = "speed";
+            statEnum = StatEnum.SPEED;
         }
 
-        return stat;
+        return statEnum.toString().toLowerCase();
     }
 
     @Override
