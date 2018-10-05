@@ -551,7 +551,7 @@
     </Card>
 
     <Card id="skavenshaman">
-        <Description name="Faun"/>
+        <Description name="Skavenshaman"/>
         <Stats>
             <Stat id="strength">10</Stat>
             <Stat id="toughness">7</Stat>

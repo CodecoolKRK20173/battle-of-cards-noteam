@@ -28,10 +28,12 @@ public class GameController {
         Scanner scanner = new Scanner(System.in);
         while(!tableController.isEndGame()) {
             tableController.prepareTable();
+            
+            System.out.println(playerController.getPlayerList().get(tableController.getTable().getWhoseTurn()).getName() + " turn.");
 
             stat = playerController.getPlayerList().get(tableController.getTable().getWhoseTurn()).chooseStat();
             winCard = compareCards(stat);
-            System.out.println("Playing by " + stat + " stat.");
+            System.out.println("Playing by " + stat + " stat.\n");
             View.printTable(playerController, tableController);
 
             scanner.nextLine();
